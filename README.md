@@ -85,7 +85,7 @@ Dataset:
 <img width="193" height="338" alt="image" src="https://github.com/user-attachments/assets/d2e8dd56-c338-4ab5-b039-f06f8629fa7e" />
 
 Model parameters:
-<img width="234" height="96" alt="image" src="https://github.com/user-attachments/assets/b15bcf55-f02f-4d45-89e5-e2cd3507fbd5" /
+<img width="234" height="96" alt="image" src="https://github.com/user-attachments/assets/b15bcf55-f02f-4d45-89e5-e2cd3507fbd5" />
 
 Map plot:
 <img width="532" height="372" alt="image" src="https://github.com/user-attachments/assets/23f39933-b6c4-49e3-afeb-b9a054a052f1" />
