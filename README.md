@@ -24,13 +24,14 @@ RegisterNumber: 212224250006
 
 
 ```
+```
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
-```
+
 # Create Dataset
 data = {
     "Hours_Studied": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
@@ -82,6 +83,7 @@ custom_input = pd.DataFrame({"Hours_Studied": [hours]})
 predicted_marks = model.predict(custom_input)
 
 print(f"\nPredicted marks for {hours} hours of study = {predicted_marks[0]:.2f}")
+```
 
 
 
