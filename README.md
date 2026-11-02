@@ -30,7 +30,7 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
-
+```
 # Create Dataset
 data = {
     "Hours_Studied": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
