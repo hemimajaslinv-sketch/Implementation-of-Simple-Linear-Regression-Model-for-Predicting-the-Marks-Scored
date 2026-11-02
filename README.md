@@ -25,18 +25,13 @@ RegisterNumber: 212224250006
 
 ```
 import numpy as np
-
 import pandas as pd
-
 import matplotlib.pyplot as plt
-
 from sklearn.model_selection import train_test_split
-
 from sklearn.linear_model import LinearRegression
-
 from sklearn.metrics import mean_squared_error, r2_score
 
-# Step 1: Create Dataset
+# Create Dataset
 data = {
     "Hours_Studied": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     "Marks_Scored":  [35, 40, 50, 55, 60, 65, 70, 80, 85, 95]
@@ -44,25 +39,24 @@ data = {
 df = pd.DataFrame(data)
 
 print("Dataset:\n", df.head())
-# df  <-- removed or commented out as it's a Jupyter-specific display
 
-# Step 2: Split into Features and Target
+# Split into Features and Target
 X = df[["Hours_Studied"]]
 y = df["Marks_Scored"]
 
-# Step 3: Train-test split
+# Train-test split
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
 
-# Step 4: Train Linear Regression Model
+# Train Model
 model = LinearRegression()
 model.fit(X_train, y_train)
 
-# Step 5: Predictions
+# Predictions
 y_pred = model.predict(X_test)
 
-# Step 6: Model Evaluation
+# Model Evaluation
 print("\nModel Parameters:")
 print("Intercept (b0):", model.intercept_)
 print("Slope (b1):", model.coef_[0])
@@ -71,9 +65,8 @@ print("\nEvaluation Metrics:")
 print("Mean Squared Error:", mean_squared_error(y_test, y_pred))
 print("R² Score:", r2_score(y_test, y_pred))
 
-# Step 7: Visualization
-# (Removed the stray '>' character here)
-plt.figure(figsize=(8,6))
+# Visualization
+plt.figure(figsize=(8, 6))
 plt.scatter(X, y, color='blue', label="Actual Data")
 plt.plot(X, model.predict(X), color='red', linewidth=2, label="Regression Line")
 plt.xlabel("Hours Studied")
@@ -83,11 +76,11 @@ plt.legend()
 plt.grid(True)
 plt.show()
 
-# Step 8: Predict Marks for custom input
+# Custom Input Prediction
 hours = 5
-# Fixed the warning by using a DataFrame instead of a list
 custom_input = pd.DataFrame({"Hours_Studied": [hours]})
 predicted_marks = model.predict(custom_input)
+
 print(f"\nPredicted marks for {hours} hours of study = {predicted_marks[0]:.2f}")
 
 
