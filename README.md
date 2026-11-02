@@ -1,4 +1,4 @@
-<img width="556" height="318" alt="image" src="https://github.com/user-attachments/assets/d5f362f9-f25f-4060-9135-a94040a6a6fb" /># Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored
+Regression-Model-for-Predicting-the-Marks-Scored
 
 ## AIM:
 To write a program to predict the marks scored by a student using the simple linear regression model.
@@ -82,15 +82,19 @@ print(f"\nPredicted marks for {hours} hours of study = {predicted_marks[0]:.2f}"
 
 ## Output:
 Dataset:
+
 <img width="193" height="338" alt="image" src="https://github.com/user-attachments/assets/d2e8dd56-c338-4ab5-b039-f06f8629fa7e" />
 
 Model parameters:
+
 <img width="234" height="96" alt="image" src="https://github.com/user-attachments/assets/b15bcf55-f02f-4d45-89e5-e2cd3507fbd5" />
 
 Map plot:
+
 <img width="532" height="372" alt="image" src="https://github.com/user-attachments/assets/23f39933-b6c4-49e3-afeb-b9a054a052f1" />
 
 Output:
+
 <img width="290" height="46" alt="image" src="https://github.com/user-attachments/assets/54dd4165-a19b-4844-a8a8-31cafab89b18" />
 
 
